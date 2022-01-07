@@ -124,15 +124,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <a href="../product/product.php" class="nav-link">
                 <i class="nav-icon far fa-circle"></i>
                 <p>
-                Product
+                  Product
                 </p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="../products_img/productsImg.php" class="nav-link">
+              <a href="../state/state.php" class="nav-link">
                 <i class="nav-icon far fa-circle"></i>
                 <p>
-                  product Images
+                  State
                 </p>
               </a>
             </li>
@@ -148,7 +148,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <a href="../userType/userType.php" class="nav-link">
                 <i class="nav-icon far fa-circle"></i>
                 <p>
-                User Type
+                  User Type
                 </p>
               </a>
             </li>
@@ -160,11 +160,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="../sizes/sizes.php" class="nav-link">
+                <i class="nav-icon far fa-circle"></i>
+                <p>
+                  sizes
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../colors/colors.php" class="nav-link">
+                <i class="nav-icon far fa-circle"></i>
+                <p>
+                  Colors
+                </p>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
     </aside>
-
-   

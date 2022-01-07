@@ -6,6 +6,18 @@ if ($statement = $pdo->prepare($sql)) {
         $catagorys = $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 }
+$sqli = 'SELECT * FROM foxic_colors';
+if ($statements = $pdo->prepare($sqli)) {
+    if ($statements->execute()) {
+        $colors = $statements->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+$sqll = 'SELECT * FROM foxic_sizes';
+if ($statementts = $pdo->prepare($sqll)) {
+    if ($statementts->execute()) {
+        $sizes = $statementts->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
 $title = '';
 $price = '';
 $desc = '';
@@ -13,6 +25,8 @@ $decpriceDate = '';
 $decprice = '';
 $qty = '';
 $catagory = '';
+$col = '';
+$siz = '';
 
 $title_err = '';
 $price_err = '';
@@ -30,6 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $decprice = trim($_POST['decprice']);
     $qty = trim($_POST['qty']);
     $catagory = trim($_POST['catagory']);
+    $col = trim($_POST['col']);
+    $siz = trim($_POST['siz']);
 
     if (empty($title)) {
         $title_err = 'Enter Your Product Name';
@@ -48,8 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($title_err) && empty($price_err) && empty($price_err) && empty($qty_err)) {
 
-        $sql = 'INSERT INTO foxic_product (product_title, product_desc, product_price, product_discount, product_discount_time, product_qty, catagory_id, product_img, create_at, update_at) 
-        VALUE(:product_title, :product_desc, :product_price, :product_discount, :product_discount_time, :product_qty, :catagory_id, :product_img, :create_at, :update_at)';
+        $sql = 'INSERT INTO foxic_product (product_title, product_desc, product_price, product_discount, product_discount_time, product_qty, catagory_id, colors_id, sizes_id, product_img, create_at, update_at) 
+        VALUE(:product_title, :product_desc, :product_price, :product_discount, :product_discount_time, :product_qty, :catagory_id, :colors_id, :sizes_id, :product_img, :create_at, :update_at)';
 
         if ($statement = $pdo->prepare($sql)) {
             $statement->bindValue(':product_title', $title);
@@ -59,13 +75,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $statement->bindValue(':product_discount_time', $decpriceDate);
             $statement->bindValue(':product_qty', $qty);
             $statement->bindValue(':catagory_id', $catagory);
+            $statement->bindValue(':colors_id', $col);
+            $statement->bindValue(':sizes_id', $siz);
             $statement->bindValue(':product_img', $upload_dir);
             $statement->bindValue(':create_at', $date);
             $statement->bindValue(':update_at', $date);
             if ($statement->execute()) {
+                header('location: product.php');
             }
         }
+        unset($statement);
     }
+    unset($pdo);
 }
 ?>
 <?php include_once "../partials/header.php" ?>
@@ -120,8 +141,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </select>
                     </div>
                     <div class="form-group">
+                        <label>Select Product color</label>
+                        <select class="form-control" name="col">
+                            <option value="<?php echo 0 ?>">Select Option</option>
+                            <?php foreach ($colors as $color) : ?>
+                                <option value="<?php echo $color['colors_id'] ?>"><?php echo $color['colors_title'] ?></option>
+                            <?php endforeach ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Product Size</label>
+                        <select class="form-control" name="siz">
+                            <option value="<?php echo 0 ?>">Select Option</option>
+                            <?php foreach ($sizes as $size) : ?>
+                                <option value="<?php echo $size['sizes_id'] ?>"><?php echo $size['sizes_titleSize'] ?></option>
+                            <?php endforeach ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <div class="mb-3">
-                            <label class="form-label">Upload Product Image Images</label>
+                            <label class="form-label">Upload Product Images</label>
                             <input class="form-control" type="file" name="img">
                         </div>
                     </div>

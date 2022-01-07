@@ -1,9 +1,10 @@
 <?php
+
 require_once "../../config/_dbCon.php";
-$sql = 'SELECT * FROM foxic_product';
+$sql = 'SELECT * FROM foxic_colors';
 if ($statement = $pdo->prepare($sql)) {
   if ($statement->execute()) {
-    $Products = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $colors = $statement->fetchAll(PDO::FETCH_ASSOC);
   }
 }
 
@@ -35,7 +36,7 @@ if ($statement = $pdo->prepare($sql)) {
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Products <a href="./add.php" class="btn btn-info btn-xs">Add</a></h3>
+              <h3 class="card-title">Colors <a href="./add.php" class="btn btn-info btn-xs">Add</a></h3>
               <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -52,26 +53,21 @@ if ($statement = $pdo->prepare($sql)) {
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>Image</th>
                     <th>Name</th>
                     <th>Date</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <?php foreach ($Products as $i => $Product) : ?>
+                  <?php foreach ($colors as $i => $color) : ?>
                     <tr>
                       <td><?php echo $i + 1 ?></td>
+                      <td><?php echo $color['colors_title'] ?></td>
+                      <td><?php echo $color['create_at'] ?></td>
                       <td>
-                        <img src="../../public/<?php echo $Product['product_img'] ?>" alt="" style="width:  50px;">
-                      </td>
-                      <td><?php echo $Product['product_title'] ?></td>
-                      <td><?php echo $Product['create_at'] ?></td>
-                      <td>
-                        <a href="../productImageGalry/viewproduct.php?id=<?php echo $Product['product_id'] ?>" class="btn btn-success btn-xs">View</a>
-                        <a href="./update.php?id=<?php echo $Product['product_id'] ?>" class="btn btn-warning btn-xs">Update</a>
+                        <a href="./update.php?id=<?php echo $color['colors_id'] ?>" class="btn btn-info btn-xs">Update</a>
                         <form action="delete.php" method="POST" style="display: inline-block;">
-                          <input type="hidden" name="id" value="<?php echo $Product['product_id'] ?>">
+                          <input type="hidden" name="id" value="<?php echo $color['colors_id'] ?>">
                           <button type="submit" class="btn btn-danger btn-xs">Delete</button>
                         </form>
                       </td>
