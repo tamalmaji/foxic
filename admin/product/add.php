@@ -64,8 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($title_err) && empty($price_err) && empty($price_err) && empty($qty_err)) {
 
-        $sql = 'INSERT INTO foxic_product (product_title, product_desc, product_price, product_discount, product_discount_time, product_qty, catagory_id, colors_id, sizes_id, product_img, create_at, update_at) 
-        VALUE(:product_title, :product_desc, :product_price, :product_discount, :product_discount_time, :product_qty, :catagory_id, :colors_id, :sizes_id, :product_img, :create_at, :update_at)';
+        $sql = 'INSERT INTO foxic_product (product_title, product_desc, product_price, product_discount, product_discount_time, product_qty, catagory_id, colors_id, sizes_m_id, product_img, create_at, update_at) 
+        VALUE(:product_title, :product_desc, :product_price, :product_discount, :product_discount_time, :product_qty, :catagory_id, :colors_id, :sizes_m_id, :product_img, :create_at, :update_at)';
 
         if ($statement = $pdo->prepare($sql)) {
             $statement->bindValue(':product_title', $title);
@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $statement->bindValue(':product_qty', $qty);
             $statement->bindValue(':catagory_id', $catagory);
             $statement->bindValue(':colors_id', $col);
-            $statement->bindValue(':sizes_id', $siz);
+            $statement->bindValue(':sizes_m_id', $siz);
             $statement->bindValue(':product_img', $upload_dir);
             $statement->bindValue(':create_at', $date);
             $statement->bindValue(':update_at', $date);

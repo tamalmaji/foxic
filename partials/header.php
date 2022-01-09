@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="col-auto hdr-logo">
-                        <a href="index.html" class="logo"><img srcset="images/skins/fashion/logo.webp 1x, images/skins/fashion/logo2x.webp 2x" alt="Logo"></a>
+                        <a href="index.php" class="logo"><img srcset="images/skins/fashion/logo.webp 1x, images/skins/fashion/logo2x.webp 2x" alt="Logo"></a>
                     </div>
                     <div class="hdr-nav hide-mobile nav-holder-s">
                     </div>
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             <div class="dropdn dropdn_wishlist">
-                                <a href="account-wishlist.html" class="dropdn-link only-icon wishlist-link ">
+                                <a href="account-wishlist.php" class="dropdn-link only-icon wishlist-link ">
                                     <i class="icon-heart"></i><span class="dropdn-link-txt">Wishlist</span><span class="wishlist-qty">3</span>
                                 </a>
                             </div>
@@ -137,7 +137,7 @@
                             <div class="menu-toggle"> <a href="#" class="mobilemenu-toggle"><i class="icon-menu"></i></a> </div>
                         </div>
                         <div class="col-auto hdr-logo">
-                            <a href="index.html" class="logo"><img srcset="images/skins/fashion/logo.webp 1x, images/skins/fashion/logo2x.webp 2x" alt="Logo"></a>
+                            <a href="index.php" class="logo"><img srcset="images/skins/fashion/logo.webp 1x, images/skins/fashion/logo2x.webp 2x" alt="Logo"></a>
                         </div>
                         <div class="hdr-nav hide-mobile nav-holder justify-content-center px-4">
                             <ul class="mmenu mmenu-js">
@@ -146,28 +146,28 @@
                                 <li class="mmenu-item--simple"><a href="#">Pages</a>
                                     <!-- <div class="mmenu-submenu">
 										<ul class="submenu-list">
-											<li><a href="product.html">Product page</a>
+											<li><a href="product.php">Product page</a>
 											</li>
-											<li><a href="category.html">Category page</a>
+											<li><a href="category.php">Category page</a>
 											</li>
-											<li><a href="cart.html">Cart & Checkout</a>
+											<li><a href="cart.php">Cart & Checkout</a>
 											</li>
-											<li><a href="account-create.html">Account</a>
+											<li><a href="account-create.php">Account</a>
 											</li>
-											<li><a href="blog.html">Blog</a>
+											<li><a href="blog.php">Blog</a>
 											</li>
-											<li><a href="gallery.html">Gallery</a></li>
-											<li><a href="faq.html">Faq</a></li>
-											<li><a href="about.html">About Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-											<li><a href="404.html">404 Page</a></li>
-											<li><a href="typography.html">Typography</a></li>
-											<li><a href="coming-soon.html" target="_blank">Coming soon</a></li>
+											<li><a href="gallery.php">Gallery</a></li>
+											<li><a href="faq.php">Faq</a></li>
+											<li><a href="about.php">About Us</a></li>
+											<li><a href="contact.php">Contact Us</a></li>
+											<li><a href="404.php">404 Page</a></li>
+											<li><a href="typography.php">Typography</a></li>
+											<li><a href="coming-soon.php" target="_blank">Coming soon</a></li>
 										</ul>
 									</div> -->
                                 </li>
-                                <li><a href="category.html">Accessories<span class="menu-label">SALE</span></a></li>
-                                <li class="mmenu-item--mega"><a href="category.html">Men</a>
+                                <li><a href="category.php">Accessories<span class="menu-label">SALE</span></a></li>
+                                <li class="mmenu-item--mega"><a href="category.php">Men</a>
                                     <div class="mmenu-submenu mmenu-submenu--has-bottom">
                                         <div class="mmenu-submenu-inside">
                                             <div class="container">
@@ -175,73 +175,73 @@
                                                     <div class="mmenu-bnr-wrap">
                                                         <a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/menu/mmenu-bnr-01.webp" class="lazyload fade-up" alt=""></a>
                                                     </div>
-                                                    <h3 class="submenu-title"><a href="category.html">Pre-Collection<br>Spring-Summer
+                                                    <h3 class="submenu-title"><a href="category.php">Pre-Collection<br>Spring-Summer
                                                             2021</a></h3>
                                                 </div>
                                                 <div class="mmenu-cols column-4">
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Collections</a></h3>
+                                                        <h3 class="submenu-title"><a href="category.php">Collections</a></h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques
+                                                            <li><a href="category.php">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques
                                                                         from June 2019</span></a></li>
-                                                            <li><a href="category.html">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques
+                                                            <li><a href="category.php">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques
                                                                         from March 2019</span></a></li>
-                                                            <li><a href="category.html">Spring-Summer 2021
+                                                            <li><a href="category.php">Spring-Summer 2021
                                                                     Pre-Collection<span class="submenu-link-txt">In
                                                                         boutiques</span></a></li>
-                                                            <li><a href="category.html">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a>
+                                                            <li><a href="category.php">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a>
                                                             </li>
-                                                            <li><a href="category.html">Fall-Winter 2020/21</a></li>
+                                                            <li><a href="category.php">Fall-Winter 2020/21</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Ready-to-wear</a></h3>
+                                                        <h3 class="submenu-title"><a href="category.php">Ready-to-wear</a></h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html" class="active">Jackets</a>
+                                                            <li><a href="category.php" class="active">Jackets</a>
                                                                 <ul class="sub-level">
-                                                                    <li><a href="category.html">Bomber Jackets</a></li>
-                                                                    <li><a href="category.html">Biker Jacket</a></li>
-                                                                    <li><a href="category.html">Trucker Jacket</a></li>
-                                                                    <li><a href="category.html">Denim Jackets</a></li>
-                                                                    <li><a href="category.html">Blouson Jacket<span class="menu-label">SALE</span></a></li>
-                                                                    <li><a href="category.html">Overcoat</a></li>
-                                                                    <li><a href="category.html">Trench Coat</a></li>
+                                                                    <li><a href="category.php">Bomber Jackets</a></li>
+                                                                    <li><a href="category.php">Biker Jacket</a></li>
+                                                                    <li><a href="category.php">Trucker Jacket</a></li>
+                                                                    <li><a href="category.php">Denim Jackets</a></li>
+                                                                    <li><a href="category.php">Blouson Jacket<span class="menu-label">SALE</span></a></li>
+                                                                    <li><a href="category.php">Overcoat</a></li>
+                                                                    <li><a href="category.php">Trench Coat</a></li>
                                                                 </ul>
                                                             </li>
-                                                            <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+                                                            <li><a href="category.php">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
                                                             </li>
-                                                            <li><a href="category.html">Blouses & Tops</a></li>
-                                                            <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                                            <li><a href="category.html">Skirts</a></li>
-                                                            <li><a href="category.html">Pants & Shorts</a></li>
-                                                            <li><a href="category.html">Outerwear</a></li>
-                                                            <li><a href="category.html">Swimwear</a></li>
+                                                            <li><a href="category.php">Blouses & Tops</a></li>
+                                                            <li><a href="category.php">Cardigans & Pullovers</a></li>
+                                                            <li><a href="category.php">Skirts</a></li>
+                                                            <li><a href="category.php">Pants & Shorts</a></li>
+                                                            <li><a href="category.php">Outerwear</a></li>
+                                                            <li><a href="category.php">Swimwear</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Accessories</a></h3>
+                                                        <h3 class="submenu-title"><a href="category.php">Accessories</a></h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html">Jackets</a></li>
-                                                            <li><a href="category.html">Dresses</a></li>
-                                                            <li><a href="category.html">Blouses & Tops</a></li>
-                                                            <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                                            <li><a href="category.html">Skirts<span class="menu-label">SALE</span></a></li>
-                                                            <li><a href="category.html">Pants & Shorts</a></li>
-                                                            <li><a href="category.html">Outerwear</a></li>
+                                                            <li><a href="category.php">Jackets</a></li>
+                                                            <li><a href="category.php">Dresses</a></li>
+                                                            <li><a href="category.php">Blouses & Tops</a></li>
+                                                            <li><a href="category.php">Cardigans & Pullovers</a></li>
+                                                            <li><a href="category.php">Skirts<span class="menu-label">SALE</span></a></li>
+                                                            <li><a href="category.php">Pants & Shorts</a></li>
+                                                            <li><a href="category.php">Outerwear</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Brands</a>
+                                                        <h3 class="submenu-title"><a href="category.php">Brands</a>
                                                         </h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html">Jackets</a></li>
-                                                            <li><a href="category.html">Dresses</a></li>
-                                                            <li><a href="category.html">Blouses & Tops</a></li>
-                                                            <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                                            <li><a href="category.html">Skirts<span class="menu-label menu-label--color1">SALE</span></a>
+                                                            <li><a href="category.php">Jackets</a></li>
+                                                            <li><a href="category.php">Dresses</a></li>
+                                                            <li><a href="category.php">Blouses & Tops</a></li>
+                                                            <li><a href="category.php">Cardigans & Pullovers</a></li>
+                                                            <li><a href="category.php">Skirts<span class="menu-label menu-label--color1">SALE</span></a>
                                                             </li>
-                                                            <li><a href="category.html">Pants & Shorts</a></li>
-                                                            <li><a href="category.html">Outerwear</a></li>
+                                                            <li><a href="category.php">Pants & Shorts</a></li>
+                                                            <li><a href="category.php">Outerwear</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-bottom justify-content-center">
@@ -253,7 +253,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="mmenu-item--mega"><a href="category.html">Women</a>
+                                <li class="mmenu-item--mega"><a href="category.php">Women</a>
                                     <div class="mmenu-submenu mmenu-submenu--has-bottom">
                                         <div class="mmenu-submenu-inside">
                                             <div class="container">
@@ -261,129 +261,129 @@
                                                     <div class="mmenu-bnr-wrap">
                                                         <a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/menu/mmenu-bnr-02.webp" class="lazyload fade-up" alt=""></a>
                                                     </div>
-                                                    <h3 class="submenu-title"><a href="category.html">Pre-Collection<br>Spring-Summer
+                                                    <h3 class="submenu-title"><a href="category.php">Pre-Collection<br>Spring-Summer
                                                             2021</a></h3>
                                                 </div>
                                                 <div class="mmenu-cols column-4">
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Collections</a></h3>
+                                                        <h3 class="submenu-title"><a href="category.php">Collections</a></h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques
+                                                            <li><a href="category.php">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques
                                                                         from June 2019</span></a></li>
-                                                            <li><a href="category.html">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques
+                                                            <li><a href="category.php">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques
                                                                         from March 2019</span></a></li>
-                                                            <li><a href="category.html">Spring-Summer 2021
+                                                            <li><a href="category.php">Spring-Summer 2021
                                                                     Pre-Collection<span class="submenu-link-txt">In
                                                                         boutiques</span></a></li>
-                                                            <li><a href="category.html">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a>
+                                                            <li><a href="category.php">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a>
                                                             </li>
-                                                            <li><a href="category.html">Fall-Winter 2020/21</a></li>
+                                                            <li><a href="category.php">Fall-Winter 2020/21</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Ready-to-wear</a></h3>
+                                                        <h3 class="submenu-title"><a href="category.php">Ready-to-wear</a></h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html">Jackets</a></li>
-                                                            <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+                                                            <li><a href="category.php">Jackets</a></li>
+                                                            <li><a href="category.php">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
                                                             </li>
-                                                            <li><a href="category.html">Blouses & Tops</a>
+                                                            <li><a href="category.php">Blouses & Tops</a>
                                                                 <ul>
-                                                                    <li><a href="category.html">Jackets</a></li>
-                                                                    <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+                                                                    <li><a href="category.php">Jackets</a></li>
+                                                                    <li><a href="category.php">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
                                                                     </li>
-                                                                    <li><a href="category.html">Blouses & Tops</a>
+                                                                    <li><a href="category.php">Blouses & Tops</a>
                                                                         <ul>
-                                                                            <li><a href="category.html">Jackets</a></li>
-                                                                            <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+                                                                            <li><a href="category.php">Jackets</a></li>
+                                                                            <li><a href="category.php">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
                                                                                 <ul>
-                                                                                    <li><a href="category.html">Jackets</a>
+                                                                                    <li><a href="category.php">Jackets</a>
                                                                                     </li>
-                                                                                    <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+                                                                                    <li><a href="category.php">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
                                                                                         <ul>
-                                                                                            <li><a href="category.html">Jackets</a>
+                                                                                            <li><a href="category.php">Jackets</a>
                                                                                             </li>
-                                                                                            <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+                                                                                            <li><a href="category.php">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
                                                                                             </li>
-                                                                                            <li><a href="category.html">Blouses
+                                                                                            <li><a href="category.php">Blouses
                                                                                                     & Tops</a></li>
-                                                                                            <li><a href="category.html">Cardigans
+                                                                                            <li><a href="category.php">Cardigans
                                                                                                     & Pullovers</a></li>
-                                                                                            <li><a href="category.html">Skirts</a>
+                                                                                            <li><a href="category.php">Skirts</a>
                                                                                             </li>
-                                                                                            <li><a href="category.html">Pants
+                                                                                            <li><a href="category.php">Pants
                                                                                                     & Shorts</a></li>
-                                                                                            <li><a href="category.html">Outerwear</a>
+                                                                                            <li><a href="category.php">Outerwear</a>
                                                                                             </li>
-                                                                                            <li><a href="category.html">Swimwear</a>
+                                                                                            <li><a href="category.php">Swimwear</a>
                                                                                             </li>
                                                                                         </ul>
                                                                                     </li>
-                                                                                    <li><a href="category.html">Blouses
+                                                                                    <li><a href="category.php">Blouses
                                                                                             & Tops</a></li>
-                                                                                    <li><a href="category.html">Cardigans
+                                                                                    <li><a href="category.php">Cardigans
                                                                                             & Pullovers</a></li>
-                                                                                    <li><a href="category.html">Skirts</a>
+                                                                                    <li><a href="category.php">Skirts</a>
                                                                                     </li>
-                                                                                    <li><a href="category.html">Pants &
+                                                                                    <li><a href="category.php">Pants &
                                                                                             Shorts</a></li>
-                                                                                    <li><a href="category.html">Outerwear</a>
+                                                                                    <li><a href="category.php">Outerwear</a>
                                                                                     </li>
-                                                                                    <li><a href="category.html">Swimwear</a>
+                                                                                    <li><a href="category.php">Swimwear</a>
                                                                                     </li>
                                                                                 </ul>
                                                                             </li>
-                                                                            <li><a href="category.html">Blouses &
+                                                                            <li><a href="category.php">Blouses &
                                                                                     Tops</a></li>
-                                                                            <li><a href="category.html">Cardigans &
+                                                                            <li><a href="category.php">Cardigans &
                                                                                     Pullovers</a></li>
-                                                                            <li><a href="category.html">Skirts</a></li>
-                                                                            <li><a href="category.html">Pants &
+                                                                            <li><a href="category.php">Skirts</a></li>
+                                                                            <li><a href="category.php">Pants &
                                                                                     Shorts</a></li>
-                                                                            <li><a href="category.html">Outerwear</a>
+                                                                            <li><a href="category.php">Outerwear</a>
                                                                             </li>
-                                                                            <li><a href="category.html">Swimwear</a>
+                                                                            <li><a href="category.php">Swimwear</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li><a href="category.html">Cardigans &
+                                                                    <li><a href="category.php">Cardigans &
                                                                             Pullovers</a></li>
-                                                                    <li><a href="category.html">Skirts</a></li>
-                                                                    <li><a href="category.html">Pants & Shorts</a></li>
-                                                                    <li><a href="category.html">Outerwear</a></li>
-                                                                    <li><a href="category.html">Swimwear</a></li>
+                                                                    <li><a href="category.php">Skirts</a></li>
+                                                                    <li><a href="category.php">Pants & Shorts</a></li>
+                                                                    <li><a href="category.php">Outerwear</a></li>
+                                                                    <li><a href="category.php">Swimwear</a></li>
                                                                 </ul>
                                                             </li>
-                                                            <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                                            <li><a href="category.html">Skirts</a></li>
-                                                            <li><a href="category.html">Pants & Shorts</a></li>
-                                                            <li><a href="category.html">Outerwear</a></li>
-                                                            <li><a href="category.html">Swimwear</a></li>
+                                                            <li><a href="category.php">Cardigans & Pullovers</a></li>
+                                                            <li><a href="category.php">Skirts</a></li>
+                                                            <li><a href="category.php">Pants & Shorts</a></li>
+                                                            <li><a href="category.php">Outerwear</a></li>
+                                                            <li><a href="category.php">Swimwear</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Accessories</a></h3>
+                                                        <h3 class="submenu-title"><a href="category.php">Accessories</a></h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html">Jackets</a></li>
-                                                            <li><a href="category.html">Dresses</a></li>
-                                                            <li><a href="category.html">Blouses & Tops</a></li>
-                                                            <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                                            <li><a href="category.html">Skirts<span class="menu-label">SALE</span></a></li>
-                                                            <li><a href="category.html">Pants & Shorts</a></li>
-                                                            <li><a href="category.html">Outerwear</a></li>
+                                                            <li><a href="category.php">Jackets</a></li>
+                                                            <li><a href="category.php">Dresses</a></li>
+                                                            <li><a href="category.php">Blouses & Tops</a></li>
+                                                            <li><a href="category.php">Cardigans & Pullovers</a></li>
+                                                            <li><a href="category.php">Skirts<span class="menu-label">SALE</span></a></li>
+                                                            <li><a href="category.php">Pants & Shorts</a></li>
+                                                            <li><a href="category.php">Outerwear</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-col">
-                                                        <h3 class="submenu-title"><a href="category.html">Brands</a>
+                                                        <h3 class="submenu-title"><a href="category.php">Brands</a>
                                                         </h3>
                                                         <ul class="submenu-list">
-                                                            <li><a href="category.html">Jackets</a></li>
-                                                            <li><a href="category.html">Dresses</a></li>
-                                                            <li><a href="category.html">Blouses & Tops</a></li>
-                                                            <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                                            <li><a href="category.html">Skirts<span class="menu-label menu-label--color1">SALE</span></a>
+                                                            <li><a href="category.php">Jackets</a></li>
+                                                            <li><a href="category.php">Dresses</a></li>
+                                                            <li><a href="category.php">Blouses & Tops</a></li>
+                                                            <li><a href="category.php">Cardigans & Pullovers</a></li>
+                                                            <li><a href="category.php">Skirts<span class="menu-label menu-label--color1">SALE</span></a>
                                                             </li>
-                                                            <li><a href="category.html">Pants & Shorts</a></li>
-                                                            <li><a href="category.html">Outerwear</a></li>
+                                                            <li><a href="category.php">Pants & Shorts</a></li>
+                                                            <li><a href="category.php">Outerwear</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mmenu-bottom justify-content-center">
@@ -414,7 +414,7 @@
                                     </div>
                                 </div>
                                 <div class="dropdn dropdn_wishlist">
-                                    <a href="account-wishlist.html" class="dropdn-link only-icon wishlist-link ">
+                                    <a href="account-wishlist.php" class="dropdn-link only-icon wishlist-link ">
                                         <i class="icon-heart"></i><span class="dropdn-link-txt">Wishlist</span><span class="wishlist-qty">3</span>
                                     </a>
                                 </div>
@@ -450,13 +450,13 @@
                             <a href="#" class="nav-viewall">view all</a>
                         </div>
                         <ul class="nav nav-level-1">
-                            <li><a href="index.html">Layouts<span class="menu-label menu-label--color1">New</span><span class="arrow"><i class="icon-angle-right"></i></span></a>
+                            <li><a href="index.php">Layouts<span class="menu-label menu-label--color1">New</span><span class="arrow"><i class="icon-angle-right"></i></span></a>
 
                             </li>
                             <li><a href="#">Pages<span class="arrow"><i class="icon-angle-right"></i></span></a>
 
                             </li>
-                            <li><a href="category.html">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
+                            <li><a href="category.php">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
 
                             </li>
                             <li><a href="https://bit.ly/3iLAAEp" target="_blank">Buy Theme<span class="menu-label menu-label--color3">Hurry Up!</span><span class="arrow"><i class="icon-angle-right"></i></span></a></li>
@@ -500,9 +500,9 @@
             <div class="dropdn-content-block">
                 <div class="dropdn-close"><span class="js-dropdn-close">Close</span></div>
                 <ul>
-                    <li><a href="account-create.html"><span>Log In</span><i class="icon-login"></i></a></li>
-                    <li><a href="account-create.html"><span>Register</span><i class="icon-user2"></i></a></li>
-                    <li><a href="checkout.html"><span>Checkout</span><i class="icon-card"></i></a></li>
+                    <li><a href="account-create.php"><span>Log In</span><i class="icon-login"></i></a></li>
+                    <li><a href="account-create.php"><span>Register</span><i class="icon-user2"></i></a></li>
+                    <li><a href="checkout.php"><span>Checkout</span><i class="icon-card"></i></a></li>
                 </ul>
                 <div class="dropdn-form-wrapper">
                     <h5>Quick Login</h5>
@@ -526,7 +526,7 @@
                 <div class="minicart-drop-content js-dropdn-content-scroll">
                     <div class="minicart-prd row">
                         <div class="minicart-prd-image image-hover-scale-circle col">
-                            <a href="product.html"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.webp" alt=""></a>
+                            <a href="product.php"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.webp" alt=""></a>
                         </div>
                         <div class="minicart-prd-info col">
                             <div class="minicart-prd-tag">FOXic</div>
@@ -543,7 +543,7 @@
                     </div>
                     <div class="minicart-prd row">
                         <div class="minicart-prd-image image-hover-scale-circle col">
-                            <a href="product.html"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.webp" alt=""></a>
+                            <a href="product.php"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.webp" alt=""></a>
                         </div>
                         <div class="minicart-prd-info col">
                             <div class="minicart-prd-tag">FOXic</div>
@@ -596,9 +596,9 @@
                         <div class="minicart-drop-total-price col" data-header-cart-total="">$340</div>
                     </div>
                     <div class="minicart-drop-actions">
-                        <a href="cart.html" class="btn btn--md btn--grey"><i class="icon-basket"></i><span>Cart
+                        <a href="cart.php" class="btn btn--md btn--grey"><i class="icon-basket"></i><span>Cart
                                 Page</span></a>
-                        <a href="checkout.html" class="btn btn--md"><i class="icon-checkout"></i><span>Check
+                        <a href="checkout.php" class="btn btn--md"><i class="icon-checkout"></i><span>Check
                                 out</span></a>
                     </div>
                     <ul class="payment-link mb-2">

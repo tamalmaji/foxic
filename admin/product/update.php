@@ -14,7 +14,7 @@ if ($stmt = $pdo->prepare($sqll)) {
 }
 $catId = $product['catagory_id'];
 $colId = $product['colors_id'];
-$sizeId = $product['sizes_id'];
+$sizeId = $product['sizes_m_id'];
 
 $sqli = 'SELECT * FROM foxic_catagory WHERE catagory_id = :id';
 if ($stat = $pdo->prepare($sqli)) {
@@ -68,7 +68,7 @@ $decprice = $product['product_discount'];
 $qty = $product['product_qty'];
 $catagory = $product['catagory_id'];
 $col = $product['colors_id'];
-$siz = $product['sizes_id'];
+$siz = $product['sizes_m_id'];
 $date = date('Y_m_d H:i:s');
 
 $title_err = '';
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($title_err) && empty($price_err) && empty($price_err) && empty($qty_err)) {
 
-        $sql = 'UPDATE foxic_product SET  product_title = :product_title, product_desc = :product_desc, product_price = :product_price, product_discount = :product_discount, product_discount_time = :product_discount_time, product_qty =:product_qty, catagory_id = :catagory_id, colors_id = :colors_id, sizes_id = :sizes_id, product_img = :product_img, update_at = :update_at WHERE product_id = :id';
+        $sql = 'UPDATE foxic_product SET  product_title = :product_title, product_desc = :product_desc, product_price = :product_price, product_discount = :product_discount, product_discount_time = :product_discount_time, product_qty =:product_qty, catagory_id = :catagory_id, colors_id = :colors_id, sizes_m_id = :sizes_m_id, product_img = :product_img, update_at = :update_at WHERE product_id = :id';
 
         if ($statement = $pdo->prepare($sql)) {
             $statement->bindValue(':product_title', $title);
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $statement->bindValue(':product_qty', $qty);
             $statement->bindValue(':catagory_id', $catagory);
             $statement->bindValue(':colors_id', $col);
-            $statement->bindValue(':sizes_id', $siz);
+            $statement->bindValue(':sizes_m_id', $siz);
             $statement->bindValue(':product_img', $upload_dir);
             $statement->bindValue(':update_at', $date);
             $statement->bindValue(':id', $id);
@@ -171,7 +171,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <input type="number" class="form-control <?php echo (!empty($qty_err)) ? 'is-invalid' : ''; ?>" name="qty" placeholder="Enter Quantity" value="<?php echo $qty ?>">
                         <samp class="invalid-feedback"><?php echo $qty_err; ?></samp>
                     </div>
-
                     <div class="form-group">
                         <label>Select Product Catagory</label>
                         <select class="form-control" name="catagory">
@@ -197,9 +196,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="form-group">
                         <label>Select Product Size</label>
                         <select class="form-control" name="siz">
-                            <option value="<?php echo $sizev['sizes_id'] ?>">
-                                <?php echo $sizev['sizes_titleSize'] ?>
-                            </option>
+                            <?php if ($sizev) { ?>
+                                <option value="<?php echo $sizev['sizes_id'] ?>">
+                                    <?php echo $sizev['sizes_titleSize'] ?>
+                                </option>
+                            <?php }else {  ?>
+                                <option value="<?php echo 0 ?>">Select Option</option>
+                            <?php } ?>
                             <?php foreach ($sizes as $size) : ?>
                                 <option value="<?php echo $size['sizes_id'] ?>"><?php echo $size['sizes_titleSize'] ?></option>
                             <?php endforeach ?>

@@ -14,7 +14,7 @@ if ($stmt = $pdo->prepare($sqll)) {
 }
 $catId = $product['catagory_id'];
 $colId = $product['colors_id'];
-$sizeId = $product['sizes_id'];
+$sizeId = $product['sizes_m_id'];
 
 $sqli = 'SELECT * FROM foxic_catagory WHERE catagory_id = :id';
 if ($stat = $pdo->prepare($sqli)) {
@@ -105,24 +105,30 @@ if ($statm = $pdo->prepare($q)) {
                         </div>
                         <hr>
                         <h4>Available Colors</h4>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-default text-center active">
-                                <input type="radio" name="color_option" id="color_option1" autocomplete="off" checked="">
-                                    <?php echo $cols['colors_title'] ?>
-                                <br>
-                                <!-- <i class="fas fa-circle fa-2x text-green"></i> -->
-                            </label>
-                        </div>
+                        <?php if ($cols) : ?>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-default text-center active">
+                                    <input type="radio" name="color_option" id="color_option1" autocomplete="off" checked="">
+                                        <?php echo $cols['colors_title'] ?>
+                                    <br>
+                                    <!-- <i class="fas fa-circle fa-2x text-green"></i> -->
+                                </label>
+                            </div>
+                        <?php endif ?>
 
-                        <h4 class="mt-3">Size <small>Please select one</small></h4>
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-default text-center">
-                                <input type="radio" name="color_option" id="color_option1" autocomplete="off">
-                                <span class="text-xl"><?php echo $sizev['sizes_title'] ?></span>
-                                <br>
-                                <?php echo $sizev['sizes_titleSize'] ?>
-                            </label>
+                        <h4 class="mt-3">Available <small>Size</small></h4>
+                        <div>
                         </div>
+                        <?php if ($sizev)  :?>
+                            <div class="btn-group btn-group-toggle mt-3" data-toggle="buttons">
+                                <label class="btn btn-default text-center">
+                                    <input type="radio" name=""/>
+                                    <span class="text-xl"><?php echo $sizev['sizes_title'] ?></span>
+                                    <br>
+                                    <?php echo $sizev['sizes_titleSize'] ?>
+                                </label>
+                            </div>
+                        <?php endif ?>
                     </div>
                 </div>
             </div>
